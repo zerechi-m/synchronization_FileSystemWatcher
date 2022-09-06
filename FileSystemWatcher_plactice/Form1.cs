@@ -44,9 +44,9 @@ namespace FileSystemWatcher_plactice
 
             // NotifyFilterに監視する項目
             _watcher.NotifyFilter = NotifyFilters.FileName |       // ファイル名
-                                   NotifyFilters.DirectoryName |  // フォルダ名
-                                   NotifyFilters.LastAccess |     // 最終アクセス日
-                                   NotifyFilters.LastWrite;       // 最終書込日
+                                    NotifyFilters.DirectoryName |  // フォルダ名
+                                    NotifyFilters.LastAccess |     // 最終アクセス日
+                                    NotifyFilters.LastWrite;       // 最終書込日
 
             // 監視ディレクトリ配下のサブフォルダは監視しない
             _watcher.IncludeSubdirectories = false;
