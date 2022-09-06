@@ -36,9 +36,9 @@ namespace FileSystemWatcher_plactice
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rtbAsyncMonitorResults = new System.Windows.Forms.RichTextBox();
+            this.btnBeginAsyncMonitor = new System.Windows.Forms.Button();
+            this.btnStopAsyncMonitor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -102,9 +102,9 @@ namespace FileSystemWatcher_plactice
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.richTextBox2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.rtbAsyncMonitorResults);
+            this.groupBox2.Controls.Add(this.btnBeginAsyncMonitor);
+            this.groupBox2.Controls.Add(this.btnStopAsyncMonitor);
             this.groupBox2.Location = new System.Drawing.Point(26, 283);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(438, 172);
@@ -112,34 +112,34 @@ namespace FileSystemWatcher_plactice
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "非同期監視";
             // 
-            // richTextBox2
+            // rtbAsyncMonitorResults
             // 
-            this.richTextBox2.Enabled = false;
-            this.richTextBox2.Location = new System.Drawing.Point(20, 22);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(331, 137);
-            this.richTextBox2.TabIndex = 4;
-            this.richTextBox2.Text = "";
+            this.rtbAsyncMonitorResults.Enabled = false;
+            this.rtbAsyncMonitorResults.Location = new System.Drawing.Point(20, 22);
+            this.rtbAsyncMonitorResults.Name = "rtbAsyncMonitorResults";
+            this.rtbAsyncMonitorResults.Size = new System.Drawing.Size(331, 137);
+            this.rtbAsyncMonitorResults.TabIndex = 4;
+            this.rtbAsyncMonitorResults.Text = "";
             // 
-            // button1
+            // btnBeginAsyncMonitor
             // 
-            this.button1.Location = new System.Drawing.Point(357, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "監視開始";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnBeginMonitering_Click);
+            this.btnBeginAsyncMonitor.Location = new System.Drawing.Point(357, 44);
+            this.btnBeginAsyncMonitor.Name = "btnBeginAsyncMonitor";
+            this.btnBeginAsyncMonitor.Size = new System.Drawing.Size(75, 23);
+            this.btnBeginAsyncMonitor.TabIndex = 0;
+            this.btnBeginAsyncMonitor.Text = "監視開始";
+            this.btnBeginAsyncMonitor.UseVisualStyleBackColor = true;
+            this.btnBeginAsyncMonitor.Click += new System.EventHandler(this.btnBeginAsyncMonitor_Click);
             // 
-            // button2
+            // btnStopAsyncMonitor
             // 
-            this.button2.Location = new System.Drawing.Point(357, 108);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 25);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "監視停止";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btnStopMoniterring_Click);
+            this.btnStopAsyncMonitor.Location = new System.Drawing.Point(357, 108);
+            this.btnStopAsyncMonitor.Name = "btnStopAsyncMonitor";
+            this.btnStopAsyncMonitor.Size = new System.Drawing.Size(75, 25);
+            this.btnStopAsyncMonitor.TabIndex = 1;
+            this.btnStopAsyncMonitor.Text = "監視停止";
+            this.btnStopAsyncMonitor.UseVisualStyleBackColor = true;
+            this.btnStopAsyncMonitor.Click += new System.EventHandler(this.btnStopAsyncMonitor_Click);
             // 
             // Form1
             // 
@@ -169,9 +169,9 @@ namespace FileSystemWatcher_plactice
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox rtbAsyncMonitorResults;
+        private System.Windows.Forms.Button btnBeginAsyncMonitor;
+        private System.Windows.Forms.Button btnStopAsyncMonitor;
     }
 }
 
